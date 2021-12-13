@@ -1,0 +1,96 @@
+.header {
+  width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 140px;
+  &-logo {
+    cursor: pointer;
+  }
+  &-auth {
+    display: flex;
+    gap: 0 18px;
+  }
+  .navigation {
+    margin: 30px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 0 38px;
+      list-style: none;
+      margin-left: auto;
+      margin-right: 100px;
+      color: $link-color;
+      &-link {
+        color: inherit;
+        transition: all 0.2s linear;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          height: 2px;
+          background-color: $primary-color;
+          width: 0;
+          transition: all 0.2s linear;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+        &:hover:before {
+          width: 100%;
+        }
+        &--active,
+        &--active:before {
+          color: $primary-color;
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content {
+    max-width: 496px;
+  }
+  &-title {
+    margin: 18px 0 25px 0;
+  }
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 0 36px;
+    margin-top: 50px;
+  }
+  &-watch {
+    display: flex;
+    align-items: center;
+    gap: 0 36px;
+    color: $watch-color;
+    .watch-icon {
+      width: 59px;
+      height: 59px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 17px 25px rgba(140, 141, 146, 0.12);
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  &-get_started {
+    padding: 16px 29px;
+    line-height: 24px;
+  }
+  &-card {
+    transform: translateX(98px);
+  }
+}
