@@ -1,0 +1,36 @@
+.newsletter {
+  width: 1130px;
+  border-radius: 67px;
+  margin: 0 auto;
+  background-color: $brand-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 19px;
+  padding: 77px 0 116px;
+  &-content {
+    width: 404px;
+  }
+  &-title {
+    margin-bottom: 25px;
+  }
+  &-email {
+    position: relative;
+    width: 373px;
+  }
+  &-input {
+    height: 53px;
+    width: 100%;
+    border-radius: 26.5px;
+    border: none;
+    padding: 0 150px 0 21px;
+    font-size: 16px;
+  }
+  &-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 30px 14px 31px;
+    line-height: 24px;
+  }
+}

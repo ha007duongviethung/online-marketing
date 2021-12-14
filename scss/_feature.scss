@@ -1,0 +1,37 @@
+.feature {
+  display: flex;
+  justify-content: center;
+  &-img {
+    width: 601px;
+    transform: translateX(-9px);
+  }
+  &-desc {
+    width: 502px;
+  }
+  &-title {
+    margin: 25px 0;
+  }
+  &-button {
+    margin-top: 37px;
+    padding: 17.5px 30.5px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.first-feature {
+  width: 1190px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 0 87px;
+}
+
+.last-feature {
+  gap: 0 26px;
+  background-color: $feature-color;
+  margin: 112px auto 140px;
+  padding: 117px 0 89px 0;
+  .feature-img {
+    margin-top: 75px;
+  }
+}

@@ -1,0 +1,40 @@
+.service {
+  width: 1068px;
+  margin: 140px auto 76px;
+  &-title {
+    width: 619px;
+    margin: 0 auto;
+    text-align: center;
+    &--header {
+      width: 426px;
+      margin: 25px auto 32px;
+    }
+  }
+  &-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    gap: 0 33px;
+  }
+  &-card {
+    color: inherit;
+    text-align: center;
+    border: 2px solid #edeff7;
+    box-sizing: border-box;
+    border-radius: 13px;
+    padding: 38px 42px 85px 43px;
+  }
+  &-icon {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 26px;
+  }
+  &-text {
+    font-size: 14px;
+    color: $card-color;
+    line-height: 21px;
+    margin: 19px auto 0;
+    width: 245px;
+  }
+}

@@ -1,0 +1,55 @@
+.footer {
+  background-color: $footer-background;
+  font-size: 14px;
+  &-content {
+    display: flex;
+    justify-content: center;
+    gap: 0 213px;
+    padding: 90px 0 48px;
+  }
+  &-company {
+    &--desc {
+      margin: 21px 0 27px;
+      width: 235px;
+      font-weight: 500px;
+      line-height: 22px;
+      color: $footer-text;
+    }
+    .footer-link {
+      display: flex;
+      align-items: center;
+      gap: 0 12px;
+    }
+  }
+  &-menu {
+    display: flex;
+    justify-content: center;
+    gap: 0 73px;
+  }
+  &-title {
+    font-size: 18px;
+    line-height: 35px;
+    color: $footer-title;
+    margin-bottom: 10px;
+  }
+  &-list {
+    list-style: none;
+  }
+  &-item {
+    transition: all 0.2s linear;
+    &--link {
+      line-height: 37px;
+      color: inherit;
+    }
+    &:hover {
+      color: $white-color;
+    }
+  }
+  &-copyright {
+    width: 1130px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid $border-color;
+    padding: 30px 0;
+  }
+}

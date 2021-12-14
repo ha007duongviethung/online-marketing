@@ -94,3 +94,12 @@
     transform: translateX(98px);
   }
 }
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $brand-color;
+  padding: 80px;
+  gap: 0 63px;
+}
